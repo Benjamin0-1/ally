@@ -1,36 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj": {}
+    "/Users/oliver/Documents/ally/Ally.Tests/Ally.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj": {
+    "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj",
+        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj",
         "projectName": "Ally.Api",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\obj\\",
+        "projectPath": "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj",
+        "packagesPath": "/Users/oliver/.nuget/packages/",
+        "outputPath": "/Users/oliver/Documents/ally/Ally.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/oliver/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj"
+              "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj"
               }
             }
           }
@@ -54,13 +51,13 @@
               "target": "Package",
               "version": "[11.11.0, )"
             },
-            "MediaTr": {
+            "MediatR": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[8.0.1, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -108,37 +105,92 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
+    "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
+        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj",
         "projectName": "Ally.Application",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\obj\\",
+        "projectPath": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj",
+        "packagesPath": "/Users/oliver/.nuget/packages/",
+        "outputPath": "/Users/oliver/Documents/ally/Ally.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/oliver/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj",
+        "projectName": "Ally.Core",
+        "projectPath": "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj",
+        "packagesPath": "/Users/oliver/.nuget/packages/",
+        "outputPath": "/Users/oliver/Documents/ally/Ally.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oliver/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj"
+              "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj"
               }
             }
           }
@@ -157,6 +209,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -173,90 +231,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj": {
+    "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj",
-        "projectName": "Ally.Core",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj",
+        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj",
         "projectName": "Ally.Infrastructure",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\obj\\",
+        "projectPath": "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj",
+        "packagesPath": "/Users/oliver/.nuget/packages/",
+        "outputPath": "/Users/oliver/Documents/ally/Ally.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/oliver/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -295,46 +289,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj": {
+    "/Users/oliver/Documents/ally/Ally.Tests/Ally.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj",
+        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Tests/Ally.Tests.csproj",
         "projectName": "Ally.Tests",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\obj\\",
+        "projectPath": "/Users/oliver/Documents/ally/Ally.Tests/Ally.Tests.csproj",
+        "packagesPath": "/Users/oliver/.nuget/packages/",
+        "outputPath": "/Users/oliver/Documents/ally/Ally.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/oliver/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj"
+              "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj"
               },
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj"
+              "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj"
               },
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj"
+              "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj"
               },
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj"
+              "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj": {
+                "projectPath": "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj"
               }
             }
           }
@@ -387,7 +378,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

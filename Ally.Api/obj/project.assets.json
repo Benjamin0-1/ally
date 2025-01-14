@@ -28,46 +28,30 @@
           }
         }
       },
-      "MediatR/11.0.0": {
+      "MediatR/8.0.1": {
         "type": "package",
-        "dependencies": {
-          "MediatR.Contracts": "1.0.1"
-        },
         "compile": {
-          "lib/netstandard2.1/MediatR.dll": {
+          "lib/netstandard2.0/MediatR.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.dll": {
+          "lib/netstandard2.0/MediatR.dll": {
             "related": ".xml"
           }
         }
       },
-      "MediatR.Contracts/1.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+      "MediatR.Extensions.Microsoft.DependencyInjection/8.0.1": {
         "type": "package",
         "dependencies": {
-          "MediatR": "[11.0.0, 12.0.0)",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "MediatR": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -1850,24 +1834,11 @@
       "Ally.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Ally.Core": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Ally.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/Ally.Application.dll": {}
-        }
-      },
-      "Ally.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Ally.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Ally.Core.dll": {}
         }
       }
     }
@@ -1916,46 +1887,32 @@
         "logo.png"
       ]
     },
-    "MediatR/11.0.0": {
-      "sha512": "8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
+    "MediatR/8.0.1": {
+      "sha512": "nqtv05FHNNNLmEv4QN9pRtmSLa0bnDPciOjLKpA/k5FZIVS72vPyY3/1lHQ9V/dcQSMA5ZLig62SyRk2cSKNBA==",
       "type": "package",
-      "path": "mediatr/11.0.0",
+      "path": "mediatr/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "gradient_128x128.png",
-        "lib/netstandard2.1/MediatR.dll",
-        "lib/netstandard2.1/MediatR.xml",
-        "mediatr.11.0.0.nupkg.sha512",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.8.0.1.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
-    "MediatR.Contracts/1.0.1": {
-      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+    "MediatR.Extensions.Microsoft.DependencyInjection/8.0.1": {
+      "sha512": "NsNGjesuAFiUoJCYXVzuui69iJuKFVLomk2q+nWkp8VwZjarjJRKLAQtzJqvya7H2hw/DHqzS6vxEghLtZa7yg==",
       "type": "package",
-      "path": "mediatr.contracts/1.0.1",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "gradient_128x128.png",
-        "lib/net461/MediatR.Contracts.dll",
-        "lib/net461/MediatR.Contracts.xml",
-        "lib/netstandard2.0/MediatR.Contracts.dll",
-        "lib/netstandard2.0/MediatR.Contracts.xml",
-        "mediatr.contracts.1.0.1.nupkg.sha512",
-        "mediatr.contracts.nuspec"
-      ]
-    },
-    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-      "sha512": "RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
-      "type": "package",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "gradient_128x128.png",
-        "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll",
-        "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
         "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
@@ -5399,19 +5356,14 @@
       "type": "project",
       "path": "../Ally.Application/Ally.Application.csproj",
       "msbuildProject": "../Ally.Application/Ally.Application.csproj"
-    },
-    "Ally.Core/1.0.0": {
-      "type": "project",
-      "path": "../Ally.Core/Ally.Core.csproj",
-      "msbuildProject": "../Ally.Core/Ally.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Ally.Application >= 1.0.0",
       "FluentValidation >= 11.11.0",
-      "MediaTr >= 11.0.0",
-      "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
+      "MediatR >= 8.0.1",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 8.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Microsoft.AspNetCore.SignalR >= 1.1.0",
@@ -5421,35 +5373,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benjamin\\.nuget\\packages\\": {}
+    "/Users/oliver/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj",
+      "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj",
       "projectName": "Ally.Api",
-      "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\Ally.Api.csproj",
-      "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\obj\\",
+      "projectPath": "/Users/oliver/Documents/ally/Ally.Api/Ally.Api.csproj",
+      "packagesPath": "/Users/oliver/.nuget/packages/",
+      "outputPath": "/Users/oliver/Documents/ally/Ally.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/oliver/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
-              "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj"
+            "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj": {
+              "projectPath": "/Users/oliver/Documents/ally/Ally.Application/Ally.Application.csproj"
             }
           }
         }
@@ -5473,13 +5422,13 @@
             "target": "Package",
             "version": "[11.11.0, )"
           },
-          "MediaTr": {
+          "MediatR": {
             "target": "Package",
-            "version": "[11.0.0, )"
+            "version": "[8.0.1, )"
           },
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "[11.1.0, )"
+            "version": "[8.0.1, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -5527,7 +5476,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

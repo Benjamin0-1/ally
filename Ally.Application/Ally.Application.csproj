@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ProjectReference Include="..\Ally.Core\Ally.Core.csproj" />
-  </ItemGroup>
+  </ItemGroup> -->
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>

@@ -10,8 +10,8 @@
         "dependencies": {
           "Ally.Application": "1.0.0",
           "FluentValidation": "11.11.0",
-          "MediatR": "11.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
+          "MediatR": "8.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
@@ -39,34 +39,23 @@
           }
         }
       },
-      "MediatR/11.0.0": {
-        "dependencies": {
-          "MediatR.Contracts": "1.0.1"
-        },
+      "MediatR/8.0.1": {
         "runtime": {
-          "lib/netstandard2.1/MediatR.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.0.0"
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
           }
         }
       },
-      "MediatR.Contracts/1.0.1": {
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
-          }
-        }
-      },
-      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
+      "MediatR.Extensions.Microsoft.DependencyInjection/8.0.1": {
         "dependencies": {
-          "MediatR": "11.0.0",
+          "MediatR": "8.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0"
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.1.0.0"
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -1071,19 +1060,8 @@
         }
       },
       "Ally.Application/1.0.0": {
-        "dependencies": {
-          "Ally.Core": "1.0.0"
-        },
         "runtime": {
           "Ally.Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Ally.Core/1.0.0": {
-        "runtime": {
-          "Ally.Core.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1111,26 +1089,19 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MediatR/11.0.0": {
+    "MediatR/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
-      "path": "mediatr/11.0.0",
-      "hashPath": "mediatr.11.0.0.nupkg.sha512"
+      "sha512": "sha512-nqtv05FHNNNLmEv4QN9pRtmSLa0bnDPciOjLKpA/k5FZIVS72vPyY3/1lHQ9V/dcQSMA5ZLig62SyRk2cSKNBA==",
+      "path": "mediatr/8.0.1",
+      "hashPath": "mediatr.8.0.1.nupkg.sha512"
     },
-    "MediatR.Contracts/1.0.1": {
+    "MediatR.Extensions.Microsoft.DependencyInjection/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
-      "path": "mediatr.contracts/1.0.1",
-      "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
-    },
-    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
-      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
+      "sha512": "sha512-NsNGjesuAFiUoJCYXVzuui69iJuKFVLomk2q+nWkp8VwZjarjJRKLAQtzJqvya7H2hw/DHqzS6vxEghLtZa7yg==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/8.0.1",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "type": "package",
@@ -1791,11 +1762,6 @@
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "Ally.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Ally.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

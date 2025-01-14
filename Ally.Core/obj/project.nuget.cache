@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P7xphFoa26o=",
+  "dgSpecHash": "sFNSk/AQF+o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Ally.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/oliver/Documents/ally/Ally.Core/Ally.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/oliver/.nuget/packages/mediatr/8.0.1/mediatr.8.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35820c81c5043a5f0db5ed8c339235f3cd51e701")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
