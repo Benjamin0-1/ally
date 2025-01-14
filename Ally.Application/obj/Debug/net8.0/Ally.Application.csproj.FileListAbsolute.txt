@@ -1,0 +1,15 @@
+C:\Users\benjamin\Documents\Ally\Ally.Application\bin\Debug\net8.0\Ally.Application.deps.json
+C:\Users\benjamin\Documents\Ally\Ally.Application\bin\Debug\net8.0\Ally.Application.dll
+C:\Users\benjamin\Documents\Ally\Ally.Application\bin\Debug\net8.0\Ally.Application.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Application\bin\Debug\net8.0\Ally.Core.dll
+C:\Users\benjamin\Documents\Ally\Ally.Application\bin\Debug\net8.0\Ally.Core.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.csproj.AssemblyReference.cache
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.AssemblyInfoInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.AssemblyInfo.cs
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.csproj.CoreCompileInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.App.8F766709.Up2Date
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.dll
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\refint\Ally.Application.dll
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\Ally.Application.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Application\obj\Debug\net8.0\ref\Ally.Application.dll

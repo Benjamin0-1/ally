@@ -1,0 +1,11 @@
+C:\Users\benjamin\Documents\Ally\Ally.Core\bin\Debug\net8.0\Ally.Core.deps.json
+C:\Users\benjamin\Documents\Ally\Ally.Core\bin\Debug\net8.0\Ally.Core.dll
+C:\Users\benjamin\Documents\Ally\Ally.Core\bin\Debug\net8.0\Ally.Core.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.AssemblyInfoInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.AssemblyInfo.cs
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.csproj.CoreCompileInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.dll
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\refint\Ally.Core.dll
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\Ally.Core.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Core\obj\Debug\net8.0\ref\Ally.Core.dll

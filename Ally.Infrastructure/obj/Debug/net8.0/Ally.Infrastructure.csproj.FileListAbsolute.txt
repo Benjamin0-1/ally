@@ -1,0 +1,11 @@
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\bin\Debug\net8.0\Ally.Infrastructure.deps.json
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\bin\Debug\net8.0\Ally.Infrastructure.dll
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\bin\Debug\net8.0\Ally.Infrastructure.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.AssemblyInfo.cs
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.dll
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\refint\Ally.Infrastructure.dll
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\ref\Ally.Infrastructure.dll
