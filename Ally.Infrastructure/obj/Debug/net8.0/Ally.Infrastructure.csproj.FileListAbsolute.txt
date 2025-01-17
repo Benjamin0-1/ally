@@ -9,3 +9,4 @@ C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infra
 C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\refint\Ally.Infrastructure.dll
 C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.pdb
 C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\ref\Ally.Infrastructure.dll
+C:\Users\benjamin\Documents\Ally\Ally.Infrastructure\obj\Debug\net8.0\Ally.Infrastructure.sourcelink.json

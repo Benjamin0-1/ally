@@ -1,13 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <!-- <ItemGroup>
-    <ProjectReference Include="..\Ally.Core\Ally.Core.csproj" />
-  </ItemGroup> -->
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<ItemGroup>
+		<!-- Correct ProjectReference to Ally.Domain.csproj -->
+		<ProjectReference Include="..\Ally.Domain\Ally.Domain.csproj"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Abstraction\" />
+		<Folder Include="Core\Authentication\CommandHandler\" />
+		<Folder Include="Core\Authentication\QueryHandler\" />
+		<Folder Include="Core\Authentication\Query\" />
+		<Folder Include="Core\Products\CommandHandler\" />
+		<Folder Include="Core\Products\Command\" />
+		<Folder Include="Core\Products\QueryHandler\" />
+		<Folder Include="Core\Products\Query\" />
+	</ItemGroup>
 
 </Project>

@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\benjamin\\Documents\\Ally\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|c:\\users\\benjamin\\documents\\ally\\ally.application\\ally.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|solutionrelative:ally.application\\ally.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48F5FA55-B431-4479-A9A3-485FDCEFB5A6}|Ally.Tests\\Ally.Tests.csproj|c:\\users\\benjamin\\documents\\ally\\ally.tests\\ally.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48F5FA55-B431-4479-A9A3-485FDCEFB5A6}|Ally.Tests\\Ally.Tests.csproj|solutionrelative:ally.tests\\ally.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|c:\\users\\benjamin\\documents\\ally\\ally.application\\queries\\products\\getproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|solutionrelative:ally.application\\queries\\products\\getproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|c:\\users\\benjamin\\documents\\ally\\ally.application\\commands\\users\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|solutionrelative:ally.application\\commands\\users\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6577C6B-482E-4440-874D-61653FD64972}|Ally.Core\\Ally.Core.csproj|c:\\users\\benjamin\\documents\\ally\\ally.core\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6577C6B-482E-4440-874D-61653FD64972}|Ally.Core\\Ally.Core.csproj|solutionrelative:ally.core\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ally.Application",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
+              "RelativeDocumentMoniker": "Ally.Application\\Ally.Application.csproj",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
+              "RelativeToolTip": "Ally.Application\\Ally.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-17T21:03:47.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetProductsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
+              "RelativeDocumentMoniker": "Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
+              "RelativeToolTip": "Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:45:28.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
+              "RelativeDocumentMoniker": "Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
+              "RelativeToolTip": "Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:41:05.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ally.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj",
+              "RelativeDocumentMoniker": "Ally.Tests\\Ally.Tests.csproj",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj",
+              "RelativeToolTip": "Ally.Tests\\Ally.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-13T19:20:26.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Ally.Core\\Entities\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "Ally.Core\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:16:27.193Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

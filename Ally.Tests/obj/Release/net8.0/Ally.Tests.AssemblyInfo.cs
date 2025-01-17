@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+287854e84936779b45db9e0cb96e0beea4a156ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ally.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

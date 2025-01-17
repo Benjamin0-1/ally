@@ -1,0 +1,13 @@
+C:\Users\benjamin\Documents\Ally\Ally.Domain\bin\Debug\net8.0\Ally.Domain.deps.json
+C:\Users\benjamin\Documents\Ally\Ally.Domain\bin\Debug\net8.0\Ally.Domain.dll
+C:\Users\benjamin\Documents\Ally\Ally.Domain\bin\Debug\net8.0\Ally.Domain.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.csproj.AssemblyReference.cache
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.AssemblyInfoInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.AssemblyInfo.cs
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.csproj.CoreCompileInputs.cache
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.sourcelink.json
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.dll
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\refint\Ally.Domain.dll
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\Ally.Domain.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Domain\obj\Debug\net8.0\ref\Ally.Domain.dll

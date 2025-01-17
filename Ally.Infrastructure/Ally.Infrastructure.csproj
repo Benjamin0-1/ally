@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Repositories\" />
+    <Folder Include="Settings\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />  
   </ItemGroup>
 
 </Project>

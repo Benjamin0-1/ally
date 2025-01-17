@@ -1,31 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj": {}
+    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj": {
+    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj",
         "projectName": "Ally.Infrastructure",
-        "projectPath": "/Users/oliver/Documents/ally/Ally.Infrastructure/Ally.Infrastructure.csproj",
-        "packagesPath": "/Users/oliver/.nuget/packages/",
-        "outputPath": "/Users/oliver/Documents/ally/Ally.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\Ally.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "/Users/oliver/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
