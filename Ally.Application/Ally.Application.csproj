@@ -13,7 +13,6 @@
 
 	<ItemGroup>
 		<Folder Include="Abstraction\" />
-		<Folder Include="Core\Authentication\CommandHandler\" />
 		<Folder Include="Core\Authentication\QueryHandler\" />
 		<Folder Include="Core\Authentication\Query\" />
 		<Folder Include="Core\Products\CommandHandler\" />
