@@ -80,7 +80,7 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -420,7 +420,7 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -432,7 +432,7 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
