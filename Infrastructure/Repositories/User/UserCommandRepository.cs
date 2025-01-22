@@ -5,7 +5,9 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using BCrypt.Net; // <-- hashing password
 using System.Threading.Tasks;
+using Ally.Domain.Entities;
 using Ally.Infrastructure.Data;
+using Microsoft.Extensions.Configuration;
 
 
 namespace Ally.Infrastructure.User
@@ -14,14 +16,72 @@ namespace Ally.Infrastructure.User
     {
         private readonly ApplicationDbContext _context;
         private readonly ITokenRepository _tokenRepository;
+        private readonly IConfiguration _configuration;
         public UserCommandRepository(ApplicationDbContext applicationDbContext,
-            ITokenRepository tokenRepository)
+            ITokenRepository tokenRepository,
+            IConfiguration configuration)
         {
             _context = applicationDbContext;
             _tokenRepository = tokenRepository;
+            _configuration = configuration;
         }
+
+        public async Task<bool> SignUpAsync(SignUpCommand request)
+        {
+            try
+            {
+                // Check if the user already exists
+                var existingUser = await _context.Users
+                    .Where(x => x.Email == request.Email)
+                    .FirstOrDefaultAsync();
+
+                if (existingUser != null)
+                {
+                    return false;
+                }
+
+                // Hash the password
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+
+                // Get the default role (ensure RoleEntity has data)
+                var defaultRole = await _context.Roles.FirstOrDefaultAsync(r => r.Id == 0);
+
+                if (defaultRole == null)
+                {
+                    // If no role exists with Id=0, create one
+                    defaultRole = new RoleEntity { Name = "User" }; // Assuming there's a 'Name' property on RoleEntity
+                    _context.Roles.Add(defaultRole);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Create new user entity
+                var newUser = new UserEntity
+                {
+                    FirstName = request.FirstName,
+                    LastName = request.LastName,
+                    Email = request.Email,
+                    Password = hashedPassword,
+                    RoleId = defaultRole.Id // Assign the default role ID
+                };
+
+                // Add the new user to the database
+                await _context.Users.AddAsync(newUser);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+                if (e.InnerException != null)
+                {
+                    Console.WriteLine($"Inner Exception: {e.InnerException.Message}");
+                }
+                return false;
+            }
+        }
+
         
-        // wrap in try catch.
         public async Task<LoginDto> LoginAsync(LoginCommand request)
         {
 

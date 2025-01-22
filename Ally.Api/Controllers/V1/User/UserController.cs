@@ -27,7 +27,31 @@ namespace Ally.Api.Controllers.V1
             return Ok("You are here.");
         }
 
-        [HttpPost]
+        [HttpPost("signup")]
+        public async Task<IActionResult> SignUp([FromBody] SignUpCommand command)
+        {
+            try
+            {
+                var result = await _mediator.Send(command);
+
+                if (!result)
+                {
+                    throw new ApplicationException("Error creating user");
+                }
+
+                // Return a 201 Created status code since a new resource (user) is created
+                return CreatedAtAction(nameof(SignUp), new { email = command.Email }, result); // Or use the appropriate response here
+            }
+            catch (Exception e)
+            {
+                // Log the exception for more detailed insight
+                Console.WriteLine($"Error during user sign-up: {e.Message}");
+                return StatusCode(500, $"Internal server error: {e}"); // Return a 500 error if something goes wrong
+            }
+        }
+
+
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginCommand command)
         {
             try

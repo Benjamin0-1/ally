@@ -26,8 +26,8 @@ public class UserEntity
     public string ConfirmPassword { get; set; }
     
     // RoleId <- a user works one role.
-    
-    public int RoleId { get; set; }
+
+    [Required] public int RoleId { get; set; } = 0; // <-- check if reference error in db.
     
     [ForeignKey("RoleId")]
     public RoleEntity Role { get; set; }

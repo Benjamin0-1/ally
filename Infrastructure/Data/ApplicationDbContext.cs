@@ -12,19 +12,21 @@ namespace Ally.Infrastructure.Data
         }
 
         // Register your tables here by defining DbSet properties
-        public DbSet<UserEntity> Users { get; set; } // Example table
-        public DbSet<RoleEntity> Role { get; set; }
+        public DbSet<UserEntity> Users { get; set; } // User table
+        public DbSet<RoleEntity> Roles { get; set; } // Role table
 
-        // Add more DbSet properties for other tables
+        // Add more DbSet properties for other tables if needed
         // public DbSet<OtherEntity> OtherEntities { get; set; }
 
-        // Optional: Configure entity models using Fluent API (if needed)
+        // Configure entity models using Fluent API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder); // Apply base configurations first
 
-            // Example of custom entity configuration (if needed)
-            // modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique();
+            // Enforce uniqueness for the Email field in the UserEntity table
+            modelBuilder.Entity<UserEntity>()
+                .HasIndex(u => u.Email)   // Specify the Email field
+                .IsUnique();              // Ensure uniqueness for Email in the database
         }
     }
 }

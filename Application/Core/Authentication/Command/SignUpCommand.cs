@@ -2,7 +2,7 @@
 
 namespace Ally.Application.Core.Authentication.Command;
 
-public class SignUpCommand //: IRequest<>
+public class SignUpCommand : IRequest<bool>
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
