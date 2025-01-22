@@ -50,6 +50,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.1, )"
+            },
+            "MediaTr": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
           "centralPackageVersions": {
             "Microsoft.Extensions.Logging": "6.0.0",
             "Newtonsoft.Json": "13.0.3",
@@ -124,7 +134,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[12.2.0, )"
             }
           },
           "centralPackageVersions": {
@@ -195,10 +205,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "MediatR.Contracts": {
-              "target": "Package",
-              "version": "[2.0.1, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.25, )"

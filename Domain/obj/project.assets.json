@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "MediatR.Contracts/2.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore/6.0.25": {
         "type": "package",
         "dependencies": {
@@ -302,20 +289,6 @@
     }
   },
   "libraries": {
-    "MediatR.Contracts/2.0.1": {
-      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
-      "type": "package",
-      "path": "mediatr.contracts/2.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "gradient_128x128.png",
-        "lib/netstandard2.0/MediatR.Contracts.dll",
-        "lib/netstandard2.0/MediatR.Contracts.xml",
-        "mediatr.contracts.2.0.1.nupkg.sha512",
-        "mediatr.contracts.nuspec"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/6.0.25": {
       "sha512": "txcqw2xrmvMoTIgzAdUk8JHLELofGgTK3i6glswVZs4SC8BOU1M/iSAtwMIVtAtfzxuBIUAbHPx+Ly6lfkYe7g==",
       "type": "package",
@@ -714,7 +687,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "MediatR.Contracts >= 2.0.1",
       "Microsoft.EntityFrameworkCore >= 6.0.25",
       "MongoDB.Bson >= 2.29.0",
       "Newtonsoft.Json >= 13.0.3"
@@ -766,10 +738,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "MediatR.Contracts": {
-            "target": "Package",
-            "version": "[2.0.1, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.25, )"

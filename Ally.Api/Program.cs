@@ -1,4 +1,5 @@
 using Ally.Api;
+using Ally.Application.Configuration;
 using Ally.Infrastructure.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +16,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers(); // <-- now test it
-//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddSignalR();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddRepositories();
+builder.Services.AddApplication();
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>

@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using Ally.Domain.Dtos;
+using MediatR;
 
 namespace Ally.Application.Core.Authentication.Command;
 
-public class LoginCommand : IRequest<string> // string for testing, will actually return a dto
+public class LoginCommand : IRequest<LoginDto>
 {
     public string Email { get; set; }
     
