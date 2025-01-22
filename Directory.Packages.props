@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ItemGroup>
+    <!-- Centralized package versions -->
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="Serilog" Version="2.10.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+  </ItemGroup>
+</Project>

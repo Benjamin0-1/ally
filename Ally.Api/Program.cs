@@ -1,3 +1,4 @@
+using Ally.Api;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddControllers(); // <-- now test it
 //builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddSignalR();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddRepositories();
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
@@ -41,7 +43,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseCors(); // <-- configure correctly.
+app.UseCors(corsOptions => corsOptions
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 
 

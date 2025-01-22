@@ -30,8 +30,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj"
+              "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
+              },
+              "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -85,10 +88,19 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.Extensions.Logging": "6.0.0",
+            "Newtonsoft.Json": "13.0.3",
+            "Serilog": "2.10.0"
           },
           "imports": [
             "net461",
@@ -113,14 +125,14 @@
         }
       }
     },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj": {
+    "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
-        "projectName": "Ally.Application",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
+        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\obj\\",
+        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -139,8 +151,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj"
+              "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj"
               }
             }
           }
@@ -159,6 +171,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "centralPackageVersions": {
+            "Microsoft.Extensions.Logging": "6.0.0",
+            "Newtonsoft.Json": "13.0.3",
+            "Serilog": "2.10.0"
+          },
           "imports": [
             "net461",
             "net462",
@@ -179,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj": {
+    "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj",
-        "projectName": "Ally.Domain",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\obj\\",
+        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -238,6 +255,85 @@
               "target": "Package",
               "version": "[13.0.3, )"
             }
+          },
+          "centralPackageVersions": {
+            "Microsoft.Extensions.Logging": "6.0.0",
+            "Newtonsoft.Json": "13.0.3",
+            "Serilog": "2.10.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
+              },
+              "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "centralPackageVersions": {
+            "Microsoft.Extensions.Logging": "6.0.0",
+            "Newtonsoft.Json": "13.0.3",
+            "Serilog": "2.10.0"
           },
           "imports": [
             "net461",

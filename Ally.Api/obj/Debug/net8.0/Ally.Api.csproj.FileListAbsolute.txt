@@ -10,8 +10,6 @@ C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Microsoft.OpenApi.dll
 C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Ally.Application.dll
-C:/Users/benjamin/Documents/Ally/Ally.Api/bin/Debug/net8.0/Ally.Application.pdb
 C:/Users/benjamin/Documents/Ally/Ally.Api/obj/Debug/net8.0/Ally.Api.csproj.AssemblyReference.cache
 C:/Users/benjamin/Documents/Ally/Ally.Api/obj/Debug/net8.0/Ally.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:/Users/benjamin/Documents/Ally/Ally.Api/obj/Debug/net8.0/Ally.Api.AssemblyInfoInputs.cache
@@ -420,8 +418,6 @@ C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\tr\Microsoft.CodeAnal
 C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Ally.Application.dll
-C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Ally.Application.pdb
 C:\Users\benjamin\Documents\Ally\Ally.Api\obj\Debug\net8.0\Ally.Api.csproj.AssemblyReference.cache
 C:\Users\benjamin\Documents\Ally\Ally.Api\obj\Debug\net8.0\Ally.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\benjamin\Documents\Ally\Ally.Api\obj\Debug\net8.0\Ally.Api.AssemblyInfoInputs.cache
@@ -446,5 +442,9 @@ C:\Users\benjamin\Documents\Ally\Ally.Api\obj\Debug\net8.0\Ally.Api.genruntimeco
 C:\Users\benjamin\Documents\Ally\Ally.Api\obj\Debug\net8.0\ref\Ally.Api.dll
 C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Ally.Domain.dll
-C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Ally.Domain.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Domain.dll
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Domain.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Application.dll
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Application.pdb
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\benjamin\Documents\Ally\Ally.Api\bin\Debug\net8.0\Infrastructure.pdb

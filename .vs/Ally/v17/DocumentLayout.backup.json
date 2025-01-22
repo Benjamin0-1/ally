@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\benjamin\\Documents\\Ally\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1A9F713-7A99-42E5-BABF-822EAEDAE106}|Ally.Domain\\Ally.Domain.csproj|c:\\users\\benjamin\\documents\\ally\\ally.domain\\ally.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B1A9F713-7A99-42E5-BABF-822EAEDAE106}|Ally.Domain\\Ally.Domain.csproj|solutionrelative:ally.domain\\ally.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|c:\\users\\benjamin\\documents\\ally\\ally.application\\ally.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}|Ally.Application\\Ally.Application.csproj|solutionrelative:ally.application\\ally.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -30,12 +34,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ally.Application",
+              "Title": "Ally.Domain",
+              "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj",
+              "RelativeDocumentMoniker": "Ally.Domain\\Ally.Domain.csproj",
+              "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Domain\\Ally.Domain.csproj*",
+              "RelativeToolTip": "Ally.Domain\\Ally.Domain.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-17T21:10:21.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ally.Application.csproj",
               "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
               "RelativeDocumentMoniker": "Ally.Application\\Ally.Application.csproj",
               "ToolTip": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Ally.Application.csproj",
@@ -46,12 +67,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GetProductsQuery.cs",
               "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
               "RelativeDocumentMoniker": "Ally.Application\\Queries\\Products\\GetProductsQuery.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CreateUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
               "RelativeDocumentMoniker": "Ally.Application\\Commands\\Users\\CreateUserCommand.cs",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ally.Tests.csproj",
               "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Tests\\Ally.Tests.csproj",
               "RelativeDocumentMoniker": "Ally.Tests\\Ally.Tests.csproj",
@@ -83,12 +100,11 @@
               "RelativeToolTip": "Ally.Tests\\Ally.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T19:20:26.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:20:26.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Core\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "Ally.Core\\Entities\\UserEntity.cs",

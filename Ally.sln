@@ -5,15 +5,15 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ally.Api", "Ally.Api\Ally.Api.csproj", "{3CDE456B-31E2-48D9-81F2-332F235C81F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ally.Application", "Ally.Application\Ally.Application.csproj", "{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{9AC26D70-7732-4B22-A6E1-CE1079C05FDD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ally.Core", "Ally.Core\Ally.Core.csproj", "{B6577C6B-482E-4440-874D-61653FD64972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{B6577C6B-482E-4440-874D-61653FD64972}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ally.Infrastructure", "Ally.Infrastructure\Ally.Infrastructure.csproj", "{8A51AD97-2924-44FE-AEDF-E3B2259E4D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{8A51AD97-2924-44FE-AEDF-E3B2259E4D24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ally.Tests", "Ally.Tests\Ally.Tests.csproj", "{48F5FA55-B431-4479-A9A3-485FDCEFB5A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{48F5FA55-B431-4479-A9A3-485FDCEFB5A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ally.Domain", "Ally.Domain\Ally.Domain.csproj", "{B1A9F713-7A99-42E5-BABF-822EAEDAE106}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{B1A9F713-7A99-42E5-BABF-822EAEDAE106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
