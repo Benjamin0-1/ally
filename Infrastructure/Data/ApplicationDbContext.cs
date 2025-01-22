@@ -13,6 +13,7 @@ namespace Ally.Infrastructure.Data
 
         // Register your tables here by defining DbSet properties
         public DbSet<UserEntity> Users { get; set; } // Example table
+        public DbSet<RoleEntity> Role { get; set; }
 
         // Add more DbSet properties for other tables
         // public DbSet<OtherEntity> OtherEntities { get; set; }

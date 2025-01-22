@@ -1,7 +1,14 @@
 using Ally.Api;
+using Ally.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// db
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlite("Data Source=Ally.db") // SQLite database path
+);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ally.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+059dac8e58a166ba6dad80c35dec97292b65a7b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88716f4f37f89bf419a809ceb4f836540d3c24bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ally.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ally.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

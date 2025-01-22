@@ -9,6 +9,7 @@ namespace Ally.Api.Controllers.V1
     [ApiController]
     public class UserController : ControllerBase
     {
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
