@@ -61,6 +61,7 @@ namespace Ally.Infrastructure.User
                     LastName = request.LastName,
                     Email = request.Email,
                     Password = hashedPassword,
+                    ConfirmPassword = request.ConfirmPassword,
                     RoleId = defaultRole.Id // Assign the default role ID
                 };
 

@@ -11,7 +11,7 @@ public class TokenRepository : ITokenRepository
 {
     private readonly ApplicationDbContext _context;
     // use IConfiguration to grab the jwt settings from there.
-    private readonly string _secretKey = "your-secret-key";
+    private readonly string _secretKey = "your-secret-keyadasdasdsaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
 
     public TokenRepository(ApplicationDbContext applicationDbContext)
     {
