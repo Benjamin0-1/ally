@@ -48,6 +48,7 @@ namespace Ally.Api
             // Register IAuthenticationRepository with its implementation UserCommandRepository
             services.AddScoped<IAuthenticationRepository, UserCommandRepository>();
             services.AddScoped<ICreateUserRepository, CreateUserRepositoryRepository>();
+            services.AddScoped<IUserProfileQueryRepository, UserProfileQueryRepository>();
             services.AddScoped<ITokenRepository, TokenRepository>();
             services.AddScoped<IJwtRepository, JwtRepository>();
             return services;

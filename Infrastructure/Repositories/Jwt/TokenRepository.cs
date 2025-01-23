@@ -21,7 +21,7 @@ namespace Ally.Infrastructure.Repositories.Jwt
             _context = applicationDbContext;
             _configuration = configuration;
         }
-        
+
         public async Task<string> GenerateToken(UserDto user)
         {
             try
@@ -30,8 +30,9 @@ namespace Ally.Infrastructure.Repositories.Jwt
 
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()) ,
-                    new Claim(ClaimTypes.Email, user.Email) ,
+                    // Changed 'nameid' to 'Id' here
+                    new Claim("Id", user.Id.ToString()),  // <-- Changed from ClaimTypes.NameIdentifier to "Id"
+                    new Claim(ClaimTypes.Email, user.Email),
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));
@@ -57,14 +58,14 @@ namespace Ally.Infrastructure.Repositories.Jwt
             }
         }
 
-        
         public List<Claim> GenerateTokenClaims(UserDto user)
         {
             try
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    // Changed 'nameid' to 'Id' here
+                    new Claim("Id", user.Id.ToString()),  // <-- Changed from ClaimTypes.NameIdentifier to "Id"
                     new Claim(ClaimTypes.Email, user.Email)
                 };
 

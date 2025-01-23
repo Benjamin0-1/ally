@@ -1,4 +1,5 @@
 ﻿using Ally.Application.Core.Authentication.Command;
+using Ally.Application.Core.Authentication.Query;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
@@ -20,10 +21,10 @@ namespace Ally.Api.Controllers.V1
         {
             _mediator = mediator;
         }
-        
-        
+
+
         [Authorize]
-      //  [RequireRole(0)]
+        //  [RequireRole(0)]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
@@ -43,7 +44,8 @@ namespace Ally.Api.Controllers.V1
                 }
 
                 // Return a 201 Created status code since a new resource (user) is created
-                return CreatedAtAction(nameof(SignUp), new { email = command.Email }, result); // Or use the appropriate response here
+                return CreatedAtAction(nameof(SignUp), new { email = command.Email },
+                    result); // Or use the appropriate response here
             }
             catch (Exception e)
             {
@@ -69,6 +71,28 @@ namespace Ally.Api.Controllers.V1
             }
         }
 
+        [Authorize]
+        [HttpGet("profile")]
+        public async Task<IActionResult> GetUserProfile()
+        {
+            try
+            {
+                var query = new GetUserProfileQuery();
+                var result = await _mediator.Send(query);
+
+                if (result == null)
+                {
+                    return NotFound("User profile not found.");
+                }
+
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return StatusCode(500, "An internal error occurred while processing the request.");
+            }
+        }
     }
 }
 
