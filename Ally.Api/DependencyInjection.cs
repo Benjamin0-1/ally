@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Ally.Application.Abstraction.Authentication;
+using Ally.Application.Abstraction.JWT;
 using Ally.Infrastructure.Repositories.Jwt;
 using Ally.Infrastructure.User;
 
@@ -46,7 +47,9 @@ namespace Ally.Api
         {
             // Register IAuthenticationRepository with its implementation UserCommandRepository
             services.AddScoped<IAuthenticationRepository, UserCommandRepository>();
+            services.AddScoped<ICreateUserRepository, CreateUserRepositoryRepository>();
             services.AddScoped<ITokenRepository, TokenRepository>();
+            services.AddScoped<IJwtRepository, JwtRepository>();
             return services;
         }
 

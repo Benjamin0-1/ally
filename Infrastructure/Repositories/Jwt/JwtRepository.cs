@@ -6,13 +6,11 @@ namespace Ally.Infrastructure.Repositories.Jwt;
 
 public class JwtRepository : IJwtRepository
 {
-    private readonly IJwtRepository _jwtRepository;
     private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public JwtRepository(IJwtRepository jwtRepository, IHttpContextAccessor httpContextAccessor)
+    public JwtRepository(IHttpContextAccessor httpContextAccessor)
     {
         _httpContextAccessor = httpContextAccessor;
-        _jwtRepository = jwtRepository;
     }
 
     public async Task<int> GetUserIdFromJwt()

@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using MediatR;
+using Ally.Infrastructure.ActionFilters;
+using Ally.Infrastructure.Attributes;
 
 namespace Ally.Api.Controllers.V1
 {
@@ -21,6 +23,7 @@ namespace Ally.Api.Controllers.V1
         
         
         [Authorize]
+      //  [RequireRole(0)]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
