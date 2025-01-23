@@ -16,13 +16,16 @@ namespace Ally.Infrastructure.User
     {
         private readonly ApplicationDbContext _context;
         private readonly ITokenRepository _tokenRepository;
+        private readonly ICreateUserRepository _createUserRepository;
         private readonly IConfiguration _configuration;
         public UserCommandRepository(ApplicationDbContext applicationDbContext,
             ITokenRepository tokenRepository,
+            ICreateUserRepository createUserRepository,
             IConfiguration configuration)
         {
             _context = applicationDbContext;
             _tokenRepository = tokenRepository;
+            _createUserRepository = createUserRepository;
             _configuration = configuration;
         }
 
@@ -30,7 +33,6 @@ namespace Ally.Infrastructure.User
         {
             try
             {
-                // Check if the user already exists
                 var existingUser = await _context.Users
                     .Where(x => x.Email == request.Email)
                     .FirstOrDefaultAsync();
@@ -39,33 +41,21 @@ namespace Ally.Infrastructure.User
                 {
                     return false;
                 }
-
-                // Hash the password
+                
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
-
-                // Get the default role (ensure RoleEntity has data)
+                
+                
+                // the below default roles are only temporary.
                 var defaultRole = await _context.Roles.FirstOrDefaultAsync(r => r.Id == 0);
-
                 if (defaultRole == null)
                 {
-                    // If no role exists with Id=0, create one
-                    defaultRole = new RoleEntity { Name = "User" }; // Assuming there's a 'Name' property on RoleEntity
+                    defaultRole = new RoleEntity { Name = "User" }; 
                     _context.Roles.Add(defaultRole);
                     await _context.SaveChangesAsync();
                 }
-
-                // Create new user entity
-                var newUser = new UserEntity
-                {
-                    FirstName = request.FirstName,
-                    LastName = request.LastName,
-                    Email = request.Email,
-                    Password = hashedPassword,
-                    ConfirmPassword = request.ConfirmPassword,
-                    RoleId = defaultRole.Id // Assign the default role ID
-                };
-
-                // Add the new user to the database
+                
+                var newUser = MapToUserEntity(request, hashedPassword, defaultRole.Id);
+                
                 await _context.Users.AddAsync(newUser);
                 await _context.SaveChangesAsync();
 
@@ -121,6 +111,28 @@ namespace Ally.Infrastructure.User
                 throw new ApplicationException($"Error: {ex}");
             }
         }
+
+        public bool UserPasswordConfirmation(string Password, string ConfirmPassword)
+        {
+            return Password == ConfirmPassword;
+        }
+        
+        
+        /**
+         * Later move the method below to its own interface to follow SRP.
+         */
+        private UserEntity MapToUserEntity(SignUpCommand request, string hashedPassword, int roleId)
+        {
+            return new UserEntity
+            {
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email,
+                Password = hashedPassword, 
+                RoleId = roleId
+            };
+        }
+
     }
 }
 

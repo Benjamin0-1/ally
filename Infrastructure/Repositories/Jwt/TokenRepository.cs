@@ -70,7 +70,19 @@ public class TokenRepository : ITokenRepository
 
 
 
-
+/**
+ *   var claims = new List<Claim> // <-- accessClaims
+  {
+     new Claim("Id",user.Id.ToString()), 
+      //new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()) ,
+      new Claim(ClaimTypes.NameIdentifier, user.UserName) ,
+      new Claim(ClaimTypes.Email, user.Email) ,
+      new Claim(ClaimTypes.GivenName, user.Name),
+      new Claim(ClaimTypes.Role, user.Role) ,
+      new Claim("RoleId", user.RoleId.ToString()),
+      new Claim("TokenType", "access")
+  };
+ */
 
 
 

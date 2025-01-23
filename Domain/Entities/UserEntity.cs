@@ -22,10 +22,6 @@ public class UserEntity
     [Required]
     public string Password { get; set; }
     
-    [Required]
-    public string ConfirmPassword { get; set; }
-    
-    // RoleId <- a user works one role.
 
     [Required] public int RoleId { get; set; } = 0; // <-- check if reference error in db.
     
