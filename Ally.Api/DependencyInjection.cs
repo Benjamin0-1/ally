@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Ally.Application.Abstraction.Authentication;
 using Ally.Application.Abstraction.JWT;
+using Ally.Infrastructure.ActionFilters;
 using Ally.Infrastructure.Repositories.Jwt;
 using Ally.Infrastructure.User;
 
@@ -51,6 +52,8 @@ namespace Ally.Api
             services.AddScoped<IUserProfileQueryRepository, UserProfileQueryRepository>();
             services.AddScoped<ITokenRepository, TokenRepository>();
             services.AddScoped<IJwtRepository, JwtRepository>();
+
+            services.AddScoped<RoleCheckFilter>(); // <-- test.
             return services;
         }
 

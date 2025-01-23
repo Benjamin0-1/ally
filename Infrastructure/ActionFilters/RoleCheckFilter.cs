@@ -43,6 +43,7 @@ namespace Ally.Infrastructure.ActionFilters
                 
                     int userId = await _jwtRepository.GetUserIdFromJwt();
 
+                    Console.WriteLine($"User id from RoleCheckFilter: {userId}");
                    
                     bool hasRole = await UserHasRole(userId, requiredRoleAttribute.RoleId);
 

@@ -24,12 +24,14 @@ namespace Ally.Api.Controllers.V1
 
 
         [Authorize]
-        //  [RequireRole(0)]
+        [ServiceFilter(typeof(RoleCheckFilter))]
+        [RequireRole(2)]  // This checks if the user has role 20
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
             return Ok("You are here.");
         }
+
 
         [HttpPost("signup")]
         public async Task<IActionResult> SignUp([FromBody] SignUpCommand command)
@@ -42,16 +44,14 @@ namespace Ally.Api.Controllers.V1
                 {
                     throw new ApplicationException("Error creating user");
                 }
-
-                // Return a 201 Created status code since a new resource (user) is created
+                
                 return CreatedAtAction(nameof(SignUp), new { email = command.Email },
-                    result); // Or use the appropriate response here
+                    result);
             }
             catch (Exception e)
             {
-                // Log the exception for more detailed insight
                 Console.WriteLine($"Error during user sign-up: {e.Message}");
-                return StatusCode(500, $"Internal server error: {e}"); // Return a 500 error if something goes wrong
+                return StatusCode(500, $"Internal server error: {e}");
             }
         }
 
