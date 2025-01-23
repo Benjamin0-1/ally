@@ -3,16 +3,18 @@ using Ally.Application.Configuration;
 using Ally.Infrastructure.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// db
+// db (Hardcoded SQLite connection string for now, can be switched later)
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlite("Data Source=Ally.db") // SQLite database path
+    options.UseSqlite("Data Source=Ally.db") // SQLite connection string
 );
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers(); // <-- now test it
@@ -21,19 +23,23 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddRepositories();
 builder.Services.AddApplication();
 
+// Get JWT settings from appsettings.json
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+
+// Add JWT authentication using real secrets from appsettings.json
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
     {
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = "your_issuer",
-            ValidAudience = "your_audience",
-            IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
-                System.Text.Encoding.UTF8.GetBytes("your_secret_key"))
+            ValidIssuer = jwtSettings["Issuer"],  // Real issuer from appsettings.json
+            ValidAudience = jwtSettings["Audience"],  // Real audience from appsettings.json
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]))  // Real secret key from appsettings.json
         };
     });
 
@@ -45,7 +51,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(); 
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
@@ -56,11 +62,6 @@ app.UseCors(corsOptions => corsOptions
     .AllowAnyMethod()
     .AllowAnyHeader());
 
-
-
-app.MapControllers(); 
+app.MapControllers();
 
 app.Run();
-
-
-

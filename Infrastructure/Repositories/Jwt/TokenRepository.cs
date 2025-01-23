@@ -4,102 +4,77 @@ using Ally.Application.Abstraction.Authentication;
 using Ally.Domain.Dtos;
 using Ally.Infrastructure.Data;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+using System.Text;
+using System;
 
-namespace Ally.Infrastructure.Repositories.Jwt;
-
-public class TokenRepository : ITokenRepository
+namespace Ally.Infrastructure.Repositories.Jwt
 {
-    private readonly ApplicationDbContext _context;
-    // use IConfiguration to grab the jwt settings from there.
-    private readonly string _secretKey = "your-secret-keyadasdasdsaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
-
-    public TokenRepository(ApplicationDbContext applicationDbContext)
+    public class TokenRepository : ITokenRepository
     {
-        _context = applicationDbContext;
-    }
+        private readonly ApplicationDbContext _context;
+        private readonly IConfiguration _configuration;
 
-    public async Task<string> GenerateToken(UserDto user)
-    {
-        try
+        // Constructor with IConfiguration to grab the jwt settings
+        public TokenRepository(ApplicationDbContext applicationDbContext, IConfiguration configuration)
         {
-            var claims = GenerateTokenClaims(user);
-
-            var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_secretKey));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var tokenDescriptor = new SecurityTokenDescriptor
+            _context = applicationDbContext;
+            _configuration = configuration;
+        }
+        
+        public async Task<string> GenerateToken(UserDto user)
+        {
+            try
             {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddHours(240),
-                SigningCredentials = creds
-            };
+                var jwtSettings = _configuration.GetSection("JwtSettings");
 
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return null;
-        }
-    }
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()) ,
+                    new Claim(ClaimTypes.Email, user.Email) ,
+                };
 
-    public List<Claim> GenerateTokenClaims(UserDto user)
-    {
-        try
-        {
-            var jwtHandler = new JwtSecurityTokenHandler();
-            
-            // create the claims using the dto
-            var claims = new List<Claim>
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(claims),
+                    Expires = DateTime.UtcNow.AddHours(Convert.ToDouble(jwtSettings["ExpiresInHours"])),
+                    Issuer = jwtSettings["Issuer"],
+                    Audience = jwtSettings["Audience"],
+                    SigningCredentials = creds
+                };
+
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                return tokenHandler.WriteToken(token);
+            }
+            catch (Exception e)
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()) ,
-                new Claim(ClaimTypes.Email, user.Email) ,
-            };
-
-            return claims;
+                Console.WriteLine(e);
+                return null;
+            }
         }
-        catch (Exception e)
+
+        
+        public List<Claim> GenerateTokenClaims(UserDto user)
         {
-            Console.WriteLine(e);
-            throw;
+            try
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Email, user.Email)
+                };
+
+                return claims;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }
-
-
-
-/**
- *   var claims = new List<Claim> // <-- accessClaims
-  {
-     new Claim("Id",user.Id.ToString()), 
-      //new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()) ,
-      new Claim(ClaimTypes.NameIdentifier, user.UserName) ,
-      new Claim(ClaimTypes.Email, user.Email) ,
-      new Claim(ClaimTypes.GivenName, user.Name),
-      new Claim(ClaimTypes.Role, user.Role) ,
-      new Claim("RoleId", user.RoleId.ToString()),
-      new Claim("TokenType", "access")
-  };
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

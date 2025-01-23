@@ -17,16 +17,15 @@ namespace Ally.Infrastructure.User
         private readonly ApplicationDbContext _context;
         private readonly ITokenRepository _tokenRepository;
         private readonly ICreateUserRepository _createUserRepository;
-        private readonly IConfiguration _configuration;
+        
         public UserCommandRepository(ApplicationDbContext applicationDbContext,
             ITokenRepository tokenRepository,
-            ICreateUserRepository createUserRepository,
-            IConfiguration configuration)
+            ICreateUserRepository createUserRepository)
         {
             _context = applicationDbContext;
             _tokenRepository = tokenRepository;
             _createUserRepository = createUserRepository;
-            _configuration = configuration;
+            
         }
 
         public async Task<bool> SignUpAsync(SignUpCommand request)
@@ -101,7 +100,7 @@ namespace Ally.Infrastructure.User
                 return new LoginDto
                 {
                     Token = token,
-                    TokenExpiresIn = DateTime.UtcNow.AddHours(1)
+                    TokenExpiresIn = DateTime.UtcNow.AddHours(10)
                 };
             }
 
