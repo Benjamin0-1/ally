@@ -1,4 +1,4 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Ally.Application.Abstraction.Authentication;
 using Ally.Domain.Dtos;
