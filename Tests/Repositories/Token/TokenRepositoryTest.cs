@@ -15,6 +15,11 @@ using System.Text;
 
 namespace Ally.Tests.Repositories.Token;
 
+/**
+ * Currently it does not test for the RoleId claims nor roleName
+ * since the ActionFilter for it is actually checking it against the database.
+ */
+
 public class TokenRepositoryTest
 {
     private readonly Mock<IConfiguration> _mockConfiguration;
@@ -27,19 +32,20 @@ public class TokenRepositoryTest
 
         _mockConfiguration
             .Setup(config => config.GetSection("JwtSettings")["SecretKey"])
-            .Returns("SuperSecretKeyForJwt"); // <-- simply a test secret.
+            .Returns("fG7!bW$2XpQ9#9r8@kzA^9rVjD6u3uLz\n");  // Match real SecretKey
 
         _mockConfiguration
             .Setup(config => config.GetSection("JwtSettings")["ExpiresInHours"])
-            .Returns("1");
-        
-        _mockConfiguration 
+            .Returns("10");  // Match real ExpiresInHours
+
+        _mockConfiguration
             .Setup(config => config.GetSection("JwtSettings")["Issuer"])
-            .Returns("TestIssuer");
+            .Returns("Ally-issuer");  // Match real Issuer
 
         _mockConfiguration
             .Setup(config => config.GetSection("JwtSettings")["Audience"])
-            .Returns("TestAudience");
+            .Returns("Ally-audience");  // Match real Audience
+
 
         _testUser = new UserDto
         {
@@ -66,16 +72,27 @@ public class TokenRepositoryTest
     {
         var token = await _tokenRepository.GenerateToken(_testUser);
         
-        Assert.NotNull(token); // <-- test FAILED.
+        Assert.NotNull(token);  
         
         var tokenHandler = new JwtSecurityTokenHandler();
+        
         var jwtToken = tokenHandler.ReadToken(token) as JwtSecurityToken;
-
         Assert.NotNull(jwtToken);
-        Assert.Equal("TestIssuer", jwtToken.Issuer); // <-- test the secret.
-        Assert.Equal("TestAudience", jwtToken.Audiences.First());
+        
+        Assert.Equal("Ally-issuer", jwtToken.Issuer);  
+        Assert.Equal("Ally-audience", jwtToken.Audiences.First());  
         Assert.True(jwtToken.ValidTo > DateTime.UtcNow);
+        
+        var idClaim = jwtToken?.Claims.FirstOrDefault(c => c.Type == "Id");
+        Assert.NotNull(idClaim);
+        Assert.Equal(_testUser.Id.ToString(), idClaim?.Value);
+
+        var emailClaim = jwtToken?.Claims.FirstOrDefault(c => c.Type == "email");  
+        Assert.NotNull(emailClaim);  
+        Assert.Equal(_testUser.Email, emailClaim?.Value); 
     }
+
+
 
     [Fact]
     public void GenerateToken_ShouldReturnNull_WhenExceptionOccurs()
