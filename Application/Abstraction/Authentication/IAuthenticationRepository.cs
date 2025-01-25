@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Ally.Application.Abstraction.Authentication
 {
-    public interface IAuthenticationRepository
+    public interface IAuthenticationRepository // <-- implemented by UserCommandRepository.
     {
         Task<bool> SignUpAsync(SignUpCommand request); // <-- replace bool by dto so the user directly logs in at the same time.
         Task<LoginDto> LoginAsync(LoginCommand request);
