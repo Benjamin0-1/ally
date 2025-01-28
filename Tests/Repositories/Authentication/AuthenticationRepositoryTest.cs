@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System;
 using Ally.Application.Abstraction.Authentication;
+// using System.Collections; // <-- non type safe
+using System.Collections.Generic; // <-- type safe
+// new ArrayList()
 
 namespace Ally.Tests.Repositories.Authentication;
 
@@ -136,9 +139,8 @@ public class UserCommandRepositoryTests
             Email = "johndoe@example.com",
             Password = "WrongPassword"
         };
-
  
-        var exception = await Assert.ThrowsAsync<ApplicationException>(() => _userCommandRepository.LoginAsync(loginCommand)); // <- make it match
+        var exception = await Assert.ThrowsAsync<ApplicationException>(() => _userCommandRepository.LoginAsync(loginCommand)); // <- make it match : System.Exception: Error: System.Exception: Wrong credentials
         Assert.Equal("Wrong credentials", exception.Message);
     }
 }

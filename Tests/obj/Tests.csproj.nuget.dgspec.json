@@ -13,7 +13,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Ally.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -97,11 +96,6 @@
               "version": "[6.6.2, )"
             }
           },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
-          },
           "imports": [
             "net461",
             "net462",
@@ -134,7 +128,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -181,88 +174,6 @@
               "version": "[12.2.0, )"
             }
           },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
-        "configFilePaths": [
-          "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.2.0, )"
-            }
-          },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
-          },
           "imports": [
             "net461",
             "net462",
@@ -292,7 +203,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -339,11 +249,6 @@
               "version": "[13.0.3, )"
             }
           },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
-          },
           "imports": [
             "net461",
             "net462",
@@ -373,7 +278,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -439,11 +343,6 @@
               "version": "[8.3.1, )"
             }
           },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
-          },
           "imports": [
             "net461",
             "net462",
@@ -476,7 +375,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -498,9 +396,6 @@
               },
               "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
-              },
-              "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj"
               },
               "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj"
@@ -547,11 +442,6 @@
               "target": "Package",
               "version": "[2.5.3, )"
             }
-          },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
           },
           "imports": [
             "net461",

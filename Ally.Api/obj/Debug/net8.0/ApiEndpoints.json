@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Ally.Api.Controllers.V1.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/v1/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ally.Api.Controllers.V1.UserController",
+    "Method": "Login",
+    "RelativePath": "api/v1/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Ally.Application.Core.Authentication.Command.LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ally.Api.Controllers.V1.UserController",
+    "Method": "GetUserProfile",
+    "RelativePath": "api/v1/user/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Ally.Api.Controllers.V1.UserController",
+    "Method": "SignUp",
+    "RelativePath": "api/v1/user/signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Ally.Application.Core.Authentication.Command.SignUpCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -3299,20 +3299,6 @@
           "bin/placeholder/Application.dll": {}
         }
       },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Application": "1.0.0",
-          "MediatR": "12.2.0"
-        },
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -9276,11 +9262,6 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
-    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -9296,7 +9277,6 @@
     "net8.0": [
       "Ally.Api >= 1.0.0",
       "Application >= 1.0.0",
-      "Core >= 1.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.1",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
@@ -9318,7 +9298,6 @@
       "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -9340,9 +9319,6 @@
             },
             "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Application\\Application.csproj"
-            },
-            "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Core\\Core.csproj"
             },
             "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "C:\\Users\\benjamin\\Documents\\Ally\\Infrastructure\\Infrastructure.csproj"
@@ -9390,11 +9366,6 @@
             "version": "[2.5.3, )"
           }
         },
-        "centralPackageVersions": {
-          "Microsoft.Extensions.Logging": "6.0.0",
-          "Newtonsoft.Json": "13.0.3",
-          "Serilog": "2.10.0"
-        },
         "imports": [
           "net461",
           "net462",
@@ -9420,7 +9391,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"BCrypt.Net 0.1.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "BCrypt.Net",
       "targetGraphs": [
         "net8.0"

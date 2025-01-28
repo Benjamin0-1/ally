@@ -26,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Ally.Api\Ally.Api.csproj" />
     <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\Core\Core.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 

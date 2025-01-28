@@ -13,7 +13,6 @@
         "packagesPath": "C:\\Users\\benjamin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\benjamin\\Documents\\Ally\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -59,11 +58,6 @@
               "target": "Package",
               "version": "[13.0.3, )"
             }
-          },
-          "centralPackageVersions": {
-            "Microsoft.Extensions.Logging": "6.0.0",
-            "Newtonsoft.Json": "13.0.3",
-            "Serilog": "2.10.0"
           },
           "imports": [
             "net461",
