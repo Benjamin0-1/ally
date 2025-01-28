@@ -18,6 +18,10 @@ namespace Ally.Domain.Entities
         [ForeignKey("UserId")]
         public UserEntity User { get; set; }
 
+        /**
+         * Come back to this entity later for tracking functionality.
+         */
+
         // cart initiated at (session "tracking")
         // hasBeenAbondedAt (session "tracking")
     }

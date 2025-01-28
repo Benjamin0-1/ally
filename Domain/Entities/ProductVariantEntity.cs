@@ -22,4 +22,8 @@ public class ProductVariantEntity
 
     [ForeignKey("ProductId")]
     public ProductEntity Product { get; set; }
+
+    [Required]
+    public int UserId { get; set; }
+    public UserEntity User { get; set; }
 }

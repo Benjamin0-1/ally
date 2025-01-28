@@ -7,6 +7,9 @@ using Ally.Application.Abstraction.JWT;
 using Ally.Infrastructure.ActionFilters;
 using Ally.Infrastructure.Repositories.Jwt;
 using Ally.Infrastructure.User;
+using Microsoft.AspNetCore.WebSockets;
+using Ally.Application.Abstraction.Product;
+using Ally.Infrastructure.Repositories.Products;
 
 namespace Ally.Api
 {
@@ -46,14 +49,15 @@ namespace Ally.Api
 
     public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            // Register IAuthenticationRepository with its implementation UserCommandRepository
-            services.AddScoped<IAuthenticationRepository, UserCommandRepository>();
-            services.AddScoped<ICreateUserRepository, CreateUserRepositoryRepository>();
+            services.AddScoped<IAuthenticationRepository, UserCommandRepository>(); // <-- tests done.
+            services.AddScoped<ICreateUserRepository, CreateUserRepositoryRepository>(); // <-- tests done.
             services.AddScoped<IUserProfileQueryRepository, UserProfileQueryRepository>();
             services.AddScoped<ITokenRepository, TokenRepository>();
             services.AddScoped<IJwtRepository, JwtRepository>();
+            services.AddScoped<ICreateProductRepository, CreateProductRepository>();
+            services.AddScoped<ICreateProductVariantRepository, CreateProductVariantRepository>();
 
-            services.AddScoped<RoleCheckFilter>(); // <-- test.
+            services.AddScoped<RoleCheckFilter>(); // <-- test missing.
             return services;
         }
 

@@ -14,6 +14,10 @@ namespace Ally.Infrastructure.Data
         // Register your tables here by defining DbSet properties
         public DbSet<UserEntity> Users { get; set; } // User table
         public DbSet<RoleEntity> Roles { get; set; } // Role table
+        public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<ProductVariantEntity> ProductVariants { get; set; }
+        public DbSet<CartEntity> Carts { get; set; }
+        public DbSet<CartProductVariantEntity> CartProductVariants { get; set; } // <-- actual many-to-many table
 
         // Add more DbSet properties for other tables if needed
         // public DbSet<OtherEntity> OtherEntities { get; set; }
@@ -27,6 +31,10 @@ namespace Ally.Infrastructure.Data
             modelBuilder.Entity<UserEntity>()
                 .HasIndex(u => u.Email)   // Specify the Email field
                 .IsUnique();              // Ensure uniqueness for Email in the database
+
+            modelBuilder.Entity<RoleEntity>()
+                .HasIndex(r => r.Name)
+                .IsUnique();
         }
     }
 }

@@ -12,6 +12,9 @@ public class ProductEntity
     public string Name { get; set; } // <-- unique?
 
     [Required]
+    public int UserId { get; set; } // <-- CreatedByUserId, no real relationship, just a reference.
+
+    [Required]
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     public ICollection<ProductVariantEntity> ProductVariants { get; set; } = new List<ProductVariantEntity>();
