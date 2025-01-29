@@ -35,11 +35,14 @@ namespace Ally.Infrastructure.Repositories.Cart
                 {
                     existingCartProductVariant.Quantity += request.Quantity;
                 }
-                // we use "else" to only save to the db once in the entire method.
                 else
                 {
-                    // the below will create it.
-                    var newCartProductVariant = _createCartProductVariantRepository.CreateCartProductVariant(request.CartId, request.ProductVariantId, request.Quantity);
+                    bool success = await _createCartProductVariantRepository.CreateCartProductVariant(request.CartId, request.ProductVariantId, request.Quantity);
+
+                    if (!success)
+                    {
+                        return false;
+                    }
                 }
 
                 await _context.SaveChangesAsync();
@@ -52,5 +55,6 @@ namespace Ally.Infrastructure.Repositories.Cart
                 return false;
             }
         }
+
     }
 }

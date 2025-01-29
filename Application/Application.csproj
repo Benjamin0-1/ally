@@ -13,6 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Folder Include="Core\Cart\Query\" />
 		<Folder Include="Core\Products\CommandHandler\" />
 		<Folder Include="Core\Products\QueryHandler\" />
 		<Folder Include="Core\Products\Query\" />

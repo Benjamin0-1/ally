@@ -10,7 +10,6 @@
         "dependencies": {
           "Ally.Api": "1.0.0",
           "Application": "1.0.0",
-          "Core": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "9.0.1",
           "Microsoft.NET.Test.Sdk": "17.8.0",
@@ -1909,18 +1908,6 @@
           }
         }
       },
-      "Core/1.0.0": {
-        "dependencies": {
-          "Application": "1.0.0",
-          "MediatR": "12.2.0"
-        },
-        "runtime": {
-          "Core.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.1",
@@ -3191,11 +3178,6 @@
       "sha512": ""
     },
     "Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
